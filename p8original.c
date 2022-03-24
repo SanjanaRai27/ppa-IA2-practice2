@@ -13,8 +13,7 @@ int input_n()
 Triangle input_triangle()
 {
   Triangle ABC;
-  printf("Enter the base, altitude of a triangle:\n")
-;
+  printf("Enter the base, altitude of a triangle:\n");
   scanf("%f%f", &ABC.base, &ABC.altitude);
   return ABC;
 }
@@ -45,7 +44,7 @@ Triangle find_smallest_triangle(int n, Triangle t[n])
   {
     if (small.area > t[i].area)
     {
-      small = t[i];
+      small= t[i];
     }
   }
   return small;
